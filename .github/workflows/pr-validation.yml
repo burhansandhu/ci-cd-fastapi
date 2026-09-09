@@ -34,8 +34,8 @@ jobs:
 
       - name: Run tests
         env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-          JWT_SECRET_KEY: ${{ secrets.JWT_SECRET_KEY }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL || 'postgresql+psycopg://postgres:postgres@localhost:5432/ci_cd' }}
+          JWT_SECRET_KEY: ${{ secrets.JWT_SECRET_KEY || 'ci-test-jwt-secret-key-32-chars-long' }}
         run: uv run pytest
 
       - name: Validate application

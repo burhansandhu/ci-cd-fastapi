@@ -1,0 +1,48 @@
+ 
+.env 
+__pycache__/* 
+ 
+ 
+# Virtual environment 
+.venv/ 
+ 
+# Virtual environments 
+.venv/ 
+venv/ 
+ 
+ 
+# Python cache 
+__pycache__/ 
+*.py[cod] 
+ 
+*$py.class 
+ 
+ 
+# Ruff cache 
+.ruff_cache/ 
+ 
+ 
+# Pre-commit cache 
+.pre-commit-cache/ 
+ 
+# Environment variables 
+.env 
+.env.* 
+ 
+ 
+# IDE 
+.vscode/ 
+.idea/ 
+ 
+# OS files 
+.DS_Store 
+Thumbs.db 
+ 
+# IDE / Editor 
+.vscode/ 
+.idea/ 
+
+
+screenshots/
+
+.coverage
