@@ -1,0 +1,38 @@
+[project]
+name = "day-02"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Burhan ul haq", email = "burhanulhaq60@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "alembic>=1.19.1",
+    "fastapi>=0.141.1",
+    "psycopg[binary]>=3.3.5",
+    "pwdlib[argon2]>=0.3.1",
+    "pydantic-settings>=2.15.0",
+    "pydantic[email]>=2.13.5",
+    "pyjwt>=2.13.0",
+    "sqlalchemy>=2.0.52",
+    "uvicorn>=0.52.4",
+]
+
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pre-commit>=4.6.2",
+    "pytest>=9.1.1",
+    "ruff>=0.16.6",
+]
+
+
+[tool.ruff.lint]
+extend-select = ["B"]
+ignore = ["B008"]
+
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
